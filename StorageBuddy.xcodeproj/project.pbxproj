@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6DB7CE00C9B49F0A5158092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D8DC51C03545A5BB31344F /* Assets.xcassets */; };
 		02B58199C75D2496AE9E24D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F16DC89F826A7C142C61A9 /* ContentView.swift */; };
 		06FB32B51316FB81A9C13E66 /* FilteredResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313C39AF76D223E46B1B245 /* FilteredResult.swift */; };
 		1911E308712E30716D81553B /* FileNode+Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E62E76FCE446B655D6E68 /* FileNode+Stats.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		04051D3C2D5011FB03841C53 /* FileScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileScanner.swift; sourceTree = "<group>"; };
+		C4D8DC51C03545A5BB31344F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E2276C1E16A4E7FD5C4D1C1 /* ScanResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResult.swift; sourceTree = "<group>"; };
 		114A5F3674F5839BBB93A504 /* ScanCancellationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCancellationToken.swift; sourceTree = "<group>"; };
 		1ED2ADCA2E5EFA042642BD44 /* ScanProgressPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanProgressPublisher.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		261A1320E2A130A5008A829E /* StorageBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				C4D8DC51C03545A5BB31344F /* Assets.xcassets */,
 				3325F3A2130275D434A5BB2F /* App */,
 				4E029E1F6B59757153864B58 /* Core */,
 				DB221167582284C26F71C1DF /* Data */,
@@ -231,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBF1F344DCB36CE88A3140E /* Build configuration list for PBXNativeTarget "StorageBuddy" */;
 			buildPhases = (
+				B1C80299883D4E8CA8038E26 /* Resources */,
 				38C8BB3B860DB86B4E4EEB22 /* Sources */,
 			);
 			buildRules = (
@@ -277,6 +281,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B1C80299883D4E8CA8038E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DB7CE00C9B49F0A5158092 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38C8BB3B860DB86B4E4EEB22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -319,6 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundleIconName = AppIcon;
 				INFOPLIST_KEY_CFBundleDisplayName = "Storage Buddy";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2026 ALKI";
@@ -405,6 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundleIconName = AppIcon;
 				INFOPLIST_KEY_CFBundleDisplayName = "Storage Buddy";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2026 ALKI";
