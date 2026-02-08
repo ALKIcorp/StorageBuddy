@@ -1,0 +1,36 @@
+name: StorageBuddy
+options:
+  bundleIdPrefix: com.alki.storagebuddy
+  deploymentTarget:
+    macOS: '13.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    MACOSX_DEPLOYMENT_TARGET: '13.0'
+    DEVELOPMENT_TEAM: ''
+    CODE_SIGN_STYLE: Automatic
+    PRODUCT_NAME: StorageBuddy
+
+schemes:
+  StorageBuddy:
+    build:
+      targets:
+        StorageBuddy: all
+    run:
+      config: Debug
+
+packages: {}
+
+targets:
+  StorageBuddy:
+    type: application
+    platform: macOS
+    deploymentTarget: '13.0'
+    sources:
+      - path: StorageBuddy
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.alki.storagebuddy
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_NSHumanReadableCopyright: 'Copyright (c) 2026 ALKI'
+        INFOPLIST_KEY_CFBundleDisplayName: Storage Buddy
