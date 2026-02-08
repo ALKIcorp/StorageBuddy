@@ -2,14 +2,15 @@ name: StorageBuddy
 options:
   bundleIdPrefix: com.alki.storagebuddy
   deploymentTarget:
-    macOS: '13.0'
+    macOS: '14.0'
 settings:
   base:
     SWIFT_VERSION: '5.0'
-    MACOSX_DEPLOYMENT_TARGET: '13.0'
+    MACOSX_DEPLOYMENT_TARGET: '14.0'
     DEVELOPMENT_TEAM: ''
     CODE_SIGN_STYLE: Automatic
     PRODUCT_NAME: StorageBuddy
+    GENERATE_INFOPLIST_FILE: YES
 
 schemes:
   StorageBuddy:
@@ -25,7 +26,7 @@ targets:
   StorageBuddy:
     type: application
     platform: macOS
-    deploymentTarget: '13.0'
+    deploymentTarget: '14.0'
     sources:
       - path: StorageBuddy
     settings:

@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B58199C75D2496AE9E24D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F16DC89F826A7C142C61A9 /* ContentView.swift */; };
+		06FB32B51316FB81A9C13E66 /* FilteredResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313C39AF76D223E46B1B245 /* FilteredResult.swift */; };
+		1911E308712E30716D81553B /* FileNode+Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E62E76FCE446B655D6E68 /* FileNode+Stats.swift */; };
+		21282F8C2087B782742EA69F /* StorageBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324558594BA9CA1CD10FACC3 /* StorageBuddyApp.swift */; };
+		29CCA4D51D00B1F7CDF52209 /* UInt64+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D609193C2543B14929F4DB /* UInt64+Format.swift */; };
+		2AA7D7926C97F66B6CB8374D /* FilterPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD51C273B313C08B6A9115 /* FilterPanelView.swift */; };
+		3392C4AF43AE85E40A7EB6CF /* ApplyFiltersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AE1AC1981BEE7BE4F2206 /* ApplyFiltersUseCase.swift */; };
+		3E60B70D0E0C00B3C55BEA4A /* TreeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACAE31754C8B813602CAE74 /* TreeViewModel.swift */; };
+		3EE4D1A8DDCE1249B6B460E6 /* ScanCancellationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A5F3674F5839BBB93A504 /* ScanCancellationToken.swift */; };
+		40A329E889B9C2CBCB9B0A6B /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D37FC78EC1815A8FED57D /* FilterViewModel.swift */; };
+		41A050AAC9ED445597436F09 /* FileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC429499921223B455E9E6 /* FileNode.swift */; };
+		41F17716BA20611C4F0312C6 /* CancelScanUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256213C2BDACFF52B683226D /* CancelScanUseCase.swift */; };
+		4AEA905EDA710770A5DF04E2 /* ScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2276C1E16A4E7FD5C4D1C1 /* ScanResult.swift */; };
+		54F176794592A932FD8CB878 /* ScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D90D2FECFF613A240C1E9 /* ScanningView.swift */; };
+		622DE2FBAAC4972F22E628B9 /* ScanProgressPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2ADCA2E5EFA042642BD44 /* ScanProgressPublisher.swift */; };
+		7C2D1879DCB607BC04F9FFB7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7CF1F98C3625570FC8CF6 /* AppCoordinator.swift */; };
+		80105F1A7D9DCB7AA244CDB9 /* SelectTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51D94BC7E34DFB77DB8348 /* SelectTargetView.swift */; };
+		8309A552987165382A2BE4E8 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7082E8EEA288CD14984FA3E3 /* TreeView.swift */; };
+		8414F06359A21CE1AA2A6157 /* FilterCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070218844E946D7CA862B17 /* FilterCriteria.swift */; };
+		882BB7C3A1C39C7631BA9C46 /* StartScanUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FABCF64BB665EF66D60112 /* StartScanUseCase.swift */; };
+		8B054C8E4F4EB1D36ECC3823 /* MetadataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A11EB767FB1EBCE1752613 /* MetadataLoader.swift */; };
+		B447C379569B9A58BD812669 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C5235BCEB974F22C4986D0 /* DashboardView.swift */; };
+		C6A15C37E25983DBC26470E2 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DB348378A5E6401C40F4 /* ResultsView.swift */; };
+		DB8FA9D46D1D8FF3BDB7DDA0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F190CE641F88202E8C88F6 /* DashboardViewModel.swift */; };
+		EFBEB147FA33FE07A53C9EFB /* FileScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04051D3C2D5011FB03841C53 /* FileScanner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04051D3C2D5011FB03841C53 /* FileScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileScanner.swift; sourceTree = "<group>"; };
+		0E2276C1E16A4E7FD5C4D1C1 /* ScanResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResult.swift; sourceTree = "<group>"; };
+		114A5F3674F5839BBB93A504 /* ScanCancellationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCancellationToken.swift; sourceTree = "<group>"; };
+		1ED2ADCA2E5EFA042642BD44 /* ScanProgressPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanProgressPublisher.swift; sourceTree = "<group>"; };
+		2070218844E946D7CA862B17 /* FilterCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCriteria.swift; sourceTree = "<group>"; };
+		256213C2BDACFF52B683226D /* CancelScanUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelScanUseCase.swift; sourceTree = "<group>"; };
+		2A7AE1AC1981BEE7BE4F2206 /* ApplyFiltersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyFiltersUseCase.swift; sourceTree = "<group>"; };
+		324558594BA9CA1CD10FACC3 /* StorageBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageBuddyApp.swift; sourceTree = "<group>"; };
+		417E62E76FCE446B655D6E68 /* FileNode+Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileNode+Stats.swift"; sourceTree = "<group>"; };
+		4313C39AF76D223E46B1B245 /* FilteredResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredResult.swift; sourceTree = "<group>"; };
+		50F16DC89F826A7C142C61A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63B7CF1F98C3625570FC8CF6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7082E8EEA288CD14984FA3E3 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		745D37FC78EC1815A8FED57D /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		87C5235BCEB974F22C4986D0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		89FABCF64BB665EF66D60112 /* StartScanUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScanUseCase.swift; sourceTree = "<group>"; };
+		8F51D94BC7E34DFB77DB8348 /* SelectTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTargetView.swift; sourceTree = "<group>"; };
+		9586DB348378A5E6401C40F4 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		B1FD933975F3740350A65352 /* StorageBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorageBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACAE31754C8B813602CAE74 /* TreeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeViewModel.swift; sourceTree = "<group>"; };
+		C9D609193C2543B14929F4DB /* UInt64+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt64+Format.swift"; sourceTree = "<group>"; };
+		D1A11EB767FB1EBCE1752613 /* MetadataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataLoader.swift; sourceTree = "<group>"; };
+		E9FD51C273B313C08B6A9115 /* FilterPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPanelView.swift; sourceTree = "<group>"; };
+		EE1D90D2FECFF613A240C1E9 /* ScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningView.swift; sourceTree = "<group>"; };
+		F8F190CE641F88202E8C88F6 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		FECC429499921223B455E9E6 /* FileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		05D13B9EAA858BA5D4801D0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				417E62E76FCE446B655D6E68 /* FileNode+Stats.swift */,
+				C9D609193C2543B14929F4DB /* UInt64+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		261A1320E2A130A5008A829E /* StorageBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				3325F3A2130275D434A5BB2F /* App */,
+				4E029E1F6B59757153864B58 /* Core */,
+				DB221167582284C26F71C1DF /* Data */,
+				E8A048D33F520D28E8F13DE1 /* Domain */,
+				6CCB6603C290FBD6D8BCA942 /* Presentation */,
+			);
+			path = StorageBuddy;
+			sourceTree = "<group>";
+		};
+		29B0B9909DB6C788321CFE5E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				87C5235BCEB974F22C4986D0 /* DashboardView.swift */,
+				F8F190CE641F88202E8C88F6 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		3325F3A2130275D434A5BB2F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				63B7CF1F98C3625570FC8CF6 /* AppCoordinator.swift */,
+				50F16DC89F826A7C142C61A9 /* ContentView.swift */,
+				324558594BA9CA1CD10FACC3 /* StorageBuddyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		33FA22229CB440DE911DDB62 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				114A5F3674F5839BBB93A504 /* ScanCancellationToken.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3B45704F6C2954E7FE33D433 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FECC429499921223B455E9E6 /* FileNode.swift */,
+				2070218844E946D7CA862B17 /* FilterCriteria.swift */,
+				4313C39AF76D223E46B1B245 /* FilteredResult.swift */,
+				0E2276C1E16A4E7FD5C4D1C1 /* ScanResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C3FC4D71AA3BB95EC7B6CBA /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD51C273B313C08B6A9115 /* FilterPanelView.swift */,
+				745D37FC78EC1815A8FED57D /* FilterViewModel.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		4E029E1F6B59757153864B58 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				05D13B9EAA858BA5D4801D0D /* Extensions */,
+				33FA22229CB440DE911DDB62 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5E173F12E3FE4C7944FC8AB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1FD933975F3740350A65352 /* StorageBuddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CCB6603C290FBD6D8BCA942 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9586DB348378A5E6401C40F4 /* ResultsView.swift */,
+				EE1D90D2FECFF613A240C1E9 /* ScanningView.swift */,
+				8F51D94BC7E34DFB77DB8348 /* SelectTargetView.swift */,
+				29B0B9909DB6C788321CFE5E /* Dashboard */,
+				3C3FC4D71AA3BB95EC7B6CBA /* Filters */,
+				DF06D4396CC0B36ABEE8E1D1 /* Tree */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		81DE849DF632E46C035E2A82 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AE1AC1981BEE7BE4F2206 /* ApplyFiltersUseCase.swift */,
+				256213C2BDACFF52B683226D /* CancelScanUseCase.swift */,
+				89FABCF64BB665EF66D60112 /* StartScanUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A53F098BB2F95BC164B00230 = {
+			isa = PBXGroup;
+			children = (
+				261A1320E2A130A5008A829E /* StorageBuddy */,
+				5E173F12E3FE4C7944FC8AB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB221167582284C26F71C1DF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E590AF20173DEBAFACDC39A5 /* FileSystem */,
+				FD520077CC873DDC7752BD95 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DF06D4396CC0B36ABEE8E1D1 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				7082E8EEA288CD14984FA3E3 /* TreeView.swift */,
+				BACAE31754C8B813602CAE74 /* TreeViewModel.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		E590AF20173DEBAFACDC39A5 /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				04051D3C2D5011FB03841C53 /* FileScanner.swift */,
+				D1A11EB767FB1EBCE1752613 /* MetadataLoader.swift */,
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		E8A048D33F520D28E8F13DE1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3B45704F6C2954E7FE33D433 /* Models */,
+				81DE849DF632E46C035E2A82 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FD520077CC873DDC7752BD95 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1ED2ADCA2E5EFA042642BD44 /* ScanProgressPublisher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DA83F3C91FF8EEDBDED99B6 /* StorageBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BBF1F344DCB36CE88A3140E /* Build configuration list for PBXNativeTarget "StorageBuddy" */;
+			buildPhases = (
+				38C8BB3B860DB86B4E4EEB22 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageBuddy;
+			packageProductDependencies = (
+			);
+			productName = StorageBuddy;
+			productReference = B1FD933975F3740350A65352 /* StorageBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB19319067577E496EA51B07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5DA83F3C91FF8EEDBDED99B6 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A8B9211856773769A14F8CF1 /* Build configuration list for PBXProject "StorageBuddy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A53F098BB2F95BC164B00230;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DA83F3C91FF8EEDBDED99B6 /* StorageBuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38C8BB3B860DB86B4E4EEB22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C2D1879DCB607BC04F9FFB7 /* AppCoordinator.swift in Sources */,
+				3392C4AF43AE85E40A7EB6CF /* ApplyFiltersUseCase.swift in Sources */,
+				41F17716BA20611C4F0312C6 /* CancelScanUseCase.swift in Sources */,
+				02B58199C75D2496AE9E24D9 /* ContentView.swift in Sources */,
+				B447C379569B9A58BD812669 /* DashboardView.swift in Sources */,
+				DB8FA9D46D1D8FF3BDB7DDA0 /* DashboardViewModel.swift in Sources */,
+				1911E308712E30716D81553B /* FileNode+Stats.swift in Sources */,
+				41A050AAC9ED445597436F09 /* FileNode.swift in Sources */,
+				EFBEB147FA33FE07A53C9EFB /* FileScanner.swift in Sources */,
+				8414F06359A21CE1AA2A6157 /* FilterCriteria.swift in Sources */,
+				2AA7D7926C97F66B6CB8374D /* FilterPanelView.swift in Sources */,
+				40A329E889B9C2CBCB9B0A6B /* FilterViewModel.swift in Sources */,
+				06FB32B51316FB81A9C13E66 /* FilteredResult.swift in Sources */,
+				8B054C8E4F4EB1D36ECC3823 /* MetadataLoader.swift in Sources */,
+				C6A15C37E25983DBC26470E2 /* ResultsView.swift in Sources */,
+				3EE4D1A8DDCE1249B6B460E6 /* ScanCancellationToken.swift in Sources */,
+				622DE2FBAAC4972F22E628B9 /* ScanProgressPublisher.swift in Sources */,
+				4AEA905EDA710770A5DF04E2 /* ScanResult.swift in Sources */,
+				54F176794592A932FD8CB878 /* ScanningView.swift in Sources */,
+				80105F1A7D9DCB7AA244CDB9 /* SelectTargetView.swift in Sources */,
+				882BB7C3A1C39C7631BA9C46 /* StartScanUseCase.swift in Sources */,
+				21282F8C2087B782742EA69F /* StorageBuddyApp.swift in Sources */,
+				8309A552987165382A2BE4E8 /* TreeView.swift in Sources */,
+				3E60B70D0E0C00B3C55BEA4A /* TreeViewModel.swift in Sources */,
+				29CCA4D51D00B1F7CDF52209 /* UInt64+Format.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0FE0EB1D05A2EECAFC49F5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Storage Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2026 ALKI";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alki.storagebuddy;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1C315772A1179E3C9B9FA36F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = StorageBuddy;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		20ADD301D8DDCD6941949F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Storage Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2026 ALKI";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alki.storagebuddy;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6694239F8ECB304B66636E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = StorageBuddy;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BBF1F344DCB36CE88A3140E /* Build configuration list for PBXNativeTarget "StorageBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE0EB1D05A2EECAFC49F5DF /* Debug */,
+				20ADD301D8DDCD6941949F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A8B9211856773769A14F8CF1 /* Build configuration list for PBXProject "StorageBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C315772A1179E3C9B9FA36F /* Debug */,
+				6694239F8ECB304B66636E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB19319067577E496EA51B07 /* Project object */;
+}

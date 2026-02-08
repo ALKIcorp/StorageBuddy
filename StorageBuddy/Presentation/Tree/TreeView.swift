@@ -6,7 +6,7 @@ struct TreeView: View {
     var body: some View {
         if let root = viewModel.root {
             List {
-                OutlineGroup(root, children: \.children) { node in
+                OutlineGroup(root, children: \.childrenOptional) { node in
                     HStack {
                         Text(node.name)
                             .lineLimit(1)

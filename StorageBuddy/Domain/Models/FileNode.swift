@@ -13,6 +13,9 @@ final class FileNode: Identifiable, Hashable {
 
     var size: UInt64
     var children: [FileNode]
+    var childrenOptional: [FileNode]? {
+        children.isEmpty ? nil : children
+    }
 
     init(
         url: URL,
