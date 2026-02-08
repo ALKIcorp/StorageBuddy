@@ -17,12 +17,16 @@ final class StartScanUseCase {
 
     func startScan(target: URL) async throws -> ScanResult {
         cancellationToken.reset()
-        progressPublisher.reset()
+        await MainActor.run {
+            progressPublisher.reset()
+        }
 
         return try await scanner.scan(
             url: target,
             progress: { [weak progressPublisher] update in
-                progressPublisher?.update(progress: update)
+                Task { @MainActor in
+                    progressPublisher?.update(progress: update)
+                }
             },
             isCancelled: { [weak cancellationToken] in
                 cancellationToken?.isCancelled ?? true

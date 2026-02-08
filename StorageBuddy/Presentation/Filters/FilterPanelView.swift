@@ -50,7 +50,7 @@ struct FilterPanelView: View {
     }
 }
 
-private extension Binding where Value == Date? {
+private extension Binding where Value == Date {
     init(_ source: Binding<Date?>, replacingNilWith defaultDate: Date) {
         self.init(get: {
             source.wrappedValue ?? defaultDate
