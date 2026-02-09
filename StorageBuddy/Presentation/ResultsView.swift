@@ -6,7 +6,6 @@ struct ResultsView: View {
     var body: some View {
         VStack(spacing: 0) {
             header
-            Divider()
             HStack(spacing: 0) {
                 FilterPanelView(viewModel: coordinator.filterViewModel)
                     .frame(width: 280)

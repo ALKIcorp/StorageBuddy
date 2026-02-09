@@ -30,6 +30,10 @@ targets:
     sources:
       - path: StorageBuddy
     settings:
+      config:
+        Debug:
+          CODE_SIGNING_ALLOWED: NO
+          CODE_SIGNING_REQUIRED: NO
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.alki.storagebuddy
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
