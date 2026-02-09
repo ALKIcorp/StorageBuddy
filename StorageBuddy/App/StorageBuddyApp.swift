@@ -6,6 +6,7 @@ struct StorageBuddyApp: App {
         WindowGroup {
             ContentView()
         }
-        .windowStyle(.automatic)
+        .windowStyle(.hiddenTitleBar)
+        .windowToolbarStyle(.unifiedCompact)
     }
 }

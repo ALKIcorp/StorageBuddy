@@ -1,10 +1,17 @@
 import SwiftUI
+import AppKit
 
 struct SelectTargetView: View {
     @ObservedObject var coordinator: AppCoordinator
 
     var body: some View {
         VStack(spacing: 16) {
+            Image(nsImage: NSApp.applicationIconImage)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 192, height: 192)
+                .accessibilityLabel("Storage Buddy app icon")
+
             Text("Storage Buddy")
                 .font(.system(size: 32, weight: .bold))
 
